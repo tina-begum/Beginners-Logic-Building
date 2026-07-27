@@ -17,7 +17,7 @@ public class Problem04 {
     }
 
     public static boolean checkValidTriangle(float a, float b, float c) {
-        if ((a + b > c) || (b + c > a) || (a + c > b)) {
+        if ((a + b > c) && (b + c > a) && (a + c > b)) {
             return true;
         } else {
             return false;
