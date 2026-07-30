@@ -31,6 +31,8 @@ public class Patterns01 {
         // pattern10(sc.nextInt());
 
         // pattern11(sc.nextInt());
+
+        // pattern12(sc.nextInt());
         sc.close();
     }
 
@@ -159,4 +161,16 @@ public class Patterns01 {
         }
     }
 
+    public static void pattern12(int n) {
+        for(int i=1; i<=2*n-1; i++){
+            int noOfSpaces = (i>n)?2*n-i:i;
+            for(int j=1;j<=noOfSpaces; j++){
+                System.out.print(" ");
+            }
+            for(int k=1; k<=n+1-noOfSpaces; k++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
 }
