@@ -4,6 +4,7 @@ public class Patterns02 {
         Scanner sc = new Scanner(System.in);
         // pattern01(sc.nextInt());
         // pattern02(sc.nextInt());
+        pattern03(sc.nextInt());
         sc.close();
     }
 
@@ -50,6 +51,19 @@ public class Patterns02 {
                     System.out.print(" ");
                 }
             }
+            System.out.println();
+        }
+    }
+
+    public static void pattern03(int n) {
+        boolean val = true;
+        for (int i = 1; i <= n; i++) {
+            boolean temp = val;
+            for (int j = 1; j <= i; j++) {
+                System.out.print((temp?1:0) + " ");
+                temp = !(temp);
+            }
+            val = !(val);
             System.out.println();
         }
     }
