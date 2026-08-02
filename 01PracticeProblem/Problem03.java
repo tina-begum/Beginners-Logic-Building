@@ -9,9 +9,9 @@ public class Problem03 {
         float c = sc.nextFloat();
         
         if ((a + b > c) || (b + c > a) || (a + c > b)) {
-            System.out.print("The entered values of sides can form a valid triangle.");
+            System.out.print("Valid Triangle");
         } else {
-            System.out.print("The sides cannot form a valid triangle.");
+            System.out.print("Invalid triangle.");
         }
         sc.close();
     }

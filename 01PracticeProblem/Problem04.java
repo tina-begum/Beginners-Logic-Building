@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Problem04 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the sides of the triangle: ");
+        System.out.println("Enter the sides: ");
         float a = sc.nextFloat();
         float b = sc.nextFloat();
         float c = sc.nextFloat();
