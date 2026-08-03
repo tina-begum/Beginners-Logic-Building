@@ -5,7 +5,6 @@ public class Problem09 {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         int originalNum = num;
-        boolean isPerfect = false;
         int sum = 0;
         for (int i = 1; i < num; i++) {
             if (num % i == 0) {
@@ -13,10 +12,9 @@ public class Problem09 {
             }
         }
         if (originalNum == sum) {
-            isPerfect = true;
-            System.out.println("Is it a perfect number ? : " + isPerfect);
+            System.out.println("Is it a perfect number ? : " + true);
         } else {
-            System.out.println("Is it a perfect number ? : " + isPerfect);
+            System.out.println("Is it a perfect number ? : " + false);
         }
         sc.close();
     }
