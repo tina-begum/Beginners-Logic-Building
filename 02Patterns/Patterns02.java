@@ -4,7 +4,8 @@ public class Patterns02 {
         Scanner sc = new Scanner(System.in);
         // pattern01(sc.nextInt());
         // pattern02(sc.nextInt());
-        pattern03(sc.nextInt());
+        // pattern03(sc.nextInt());
+        pattern04(sc.nextInt());
         sc.close();
     }
 
@@ -64,6 +65,18 @@ public class Patterns02 {
                 temp = !(temp);
             }
             val = !(val);
+            System.out.println();
+        }
+    }
+
+    public static void pattern04(int n) {
+        char letter = 'A';
+        for(int i=1; i<=n; i++){
+            char ch = letter;
+            for(int j=1; j<=n-i+1; j++){
+                System.out.print(ch);
+                ch++;
+            }
             System.out.println();
         }
     }
